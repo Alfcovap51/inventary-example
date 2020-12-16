@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Microphone from './models/microphone/Astronaut.glb' ;
+import '@google/model-viewer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <model-viewer
+    src={Microphone}
+    alt='model name'
+    ar
+    loading='lazy'
+    camera-controls
+    autoplay
+    >
+  </model-viewer>
   );
 }
 

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(-45deg, rgb(172, 50, 228), rgb(121, 24, 242), rgb(72, 1, 255));
 }
 
 .App-logo {
@@ -35,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+.model-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5rem;
+  
+}
+.model-viewer model-viewer {
+  background-color: unset;
+  overflow-x: visible;
+  --poster-color: #eee;
+  width: 50%;
+  min-height: 500px;
 }

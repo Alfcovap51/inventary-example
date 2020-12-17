@@ -1,0 +1,5 @@
+body{
+   background:linear-gradient(-45deg, rgb(172, 50, 228), rgb(121, 24, 242), rgb(72, 1, 255));
+   min-height: 100vh;
+}
+

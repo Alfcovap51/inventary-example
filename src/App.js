@@ -1,19 +1,12 @@
 import "./App.css";
-import Microphone from "./models/microphone/Astronaut.glb";
-import "@google/model-viewer";
+import ModelViewer from "./components/model-viewer";
 
 function App() {
   return (
+    <div class="App">
     <div class="model-viewer">
-      <model-viewer
-        src={Microphone}
-        alt="model name"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        loading="lazy"
-        camera-controls
-        autoplay
-      ></model-viewer>
+      <ModelViewer />
+    </div>
     </div>
   );
 }
